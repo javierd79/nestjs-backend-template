@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common'
 import { MongooseModule } from '@nestjs/mongoose'
+import { UsersResolver } from './users.resolver'
 import { UsersService } from './users.service'
 import { User, UserSchema } from './model/user.model'
 import { ObjectIdScalar } from '../../common/scalars/object-id.scalar'
@@ -15,6 +16,7 @@ import { UsersControllers } from './users.controller'
     ])
   ],
   providers: [
+    UsersResolver, 
     UsersService, 
     ObjectIdScalar
   ],
