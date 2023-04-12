@@ -3,10 +3,8 @@ import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { UsersModule } from './modules/users/users.module'
 import { DatabaseModule } from './common/modules/database/database.module'
-import { GraphQLModule } from './common/modules/graphql/graphql.module';
 import { BullModule } from '@nestjs/bull'
 import { ScheduleModule } from '@nestjs/schedule'
-import { ConfigModule } from '@nestjs/config';
 import { MulterModule } from '@nestjs/platform-express';
 import { EventEmitterModule } from '@nestjs/event-emitter'
 import { AvatarsModule } from './modules/avatar/avatar.module'
@@ -36,7 +34,6 @@ import * as AutoIncrement from 'mongoose-auto-increment';
     }),
     AvatarsModule,
     AuthModule,
-    GraphQLModule,
     DatabaseModule,
     UsersModule,
   ],
