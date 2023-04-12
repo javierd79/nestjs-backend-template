@@ -1,0 +1,4 @@
+export enum LoteryEnum {
+  ZULIA_7A_7PM = 'ZULIA 7A 7:05PM',
+  TRIPLE_PELOTICA_7PM = 'TRIPLE PELOTICA 7:00PM'
+}

@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  app-server:
+    container_name: cda-server
+    environment: 
+      - NODE_ENV=production
+    env_file:
+      - .env
+    build:
+      context: ./
+    image: app-server
+    ports:
+     - "4000:4000"
