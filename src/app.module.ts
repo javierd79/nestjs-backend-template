@@ -35,7 +35,6 @@ import * as AutoIncrement from 'mongoose-auto-increment';
     }),
     AvatarsModule,
     AuthModule,
-    GraphQLModule,
     DatabaseModule,
     UsersModule,
   ],
