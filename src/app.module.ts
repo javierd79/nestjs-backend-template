@@ -3,7 +3,6 @@ import { AppController } from './app.controller'
 import { AppService } from './app.service'
 import { UsersModule } from './modules/users/users.module'
 import { DatabaseModule } from './common/modules/database/database.module'
-import { GraphQLModule } from './common/modules/graphql/graphql.module';
 import { BullModule } from '@nestjs/bull'
 import { ScheduleModule } from '@nestjs/schedule'
 import { ConfigModule } from '@nestjs/config';
